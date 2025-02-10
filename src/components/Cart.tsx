@@ -23,7 +23,7 @@ export const Cart: React.FC = () => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg"
+        className="fixed bottom-4 right-4 bg-pink-600 text-white p-4 rounded-full shadow-lg"
       >
         <ShoppingCart className="w-6 h-6" />
         {items.length > 0 && (
@@ -116,7 +116,7 @@ export const Cart: React.FC = () => {
                   </div>
                   <button
                     onClick={handleCheckout}
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="w-full bg-pink-600 text-white py-3 rounded-lg hover:bg-pink-700 transition-colors"
                   >
                     Proceed to Checkout
                   </button>

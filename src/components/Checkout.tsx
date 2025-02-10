@@ -95,16 +95,16 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                     key={step}
                     className={`flex items-center ${
                       index < steps.indexOf(currentStep)
-                        ? 'text-green-500'
+                        ? 'text-green-700 font-semibold'
                         : index === steps.indexOf(currentStep)
-                        ? 'text-blue-600'
+                        ? 'text-pink-600'
                         : 'text-gray-400'
                     }`}
                   >
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center ${
                         index <= steps.indexOf(currentStep)
-                          ? 'bg-blue-600 text-white'
+                          ? 'bg-pink-600 text-white'
                           : 'bg-gray-200'
                       }`}
                     >
@@ -123,7 +123,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                       <div
                         className={`w-12 h-0.5 mx-2 ${
                           index < steps.indexOf(currentStep)
-                            ? 'bg-blue-600'
+                            ? 'bg-pink-600'
                             : 'bg-gray-200'
                         }`}
                       />
@@ -165,7 +165,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                     </div>
                     <button
                       onClick={() => setCurrentStep('shipping')}
-                      className="w-full bg-blue-600 text-white py-3 rounded-lg mt-6 hover:bg-blue-700 transition-colors"
+                      className="w-full bg-pink-600 text-white py-3 rounded-lg mt-6 hover:bg-pink-700 transition-colors"
                     >
                       Continue to Shipping
                     </button>
@@ -192,7 +192,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               firstName: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -209,7 +209,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               lastName: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
@@ -227,7 +227,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             email: e.target.value,
                           })
                         }
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div>
@@ -244,7 +244,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             address: e.target.value,
                           })
                         }
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -262,7 +262,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               city: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -279,7 +279,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               state: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
@@ -298,7 +298,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               zipCode: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -315,13 +315,13 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               country: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
                     <button
                       type="submit"
-                      className="w-full bg-blue-600 text-white py-3 rounded-lg mt-6 hover:bg-blue-700 transition-colors"
+                      className="w-full bg-pink-600 text-white py-3 rounded-lg mt-6 hover:bg-pink-700 transition-colors"
                     >
                       Continue to Payment
                     </button>
@@ -349,7 +349,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                           })
                         }
                         placeholder="1234 5678 9012 3456"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div>
@@ -367,7 +367,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                           })
                         }
                         placeholder="John Doe"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -387,7 +387,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             })
                           }
                           placeholder="MM/YY"
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -406,14 +406,14 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             })
                           }
                           placeholder="123"
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
                     <button
                       type="submit"
                       disabled={isProcessing}
-                      className="w-full bg-blue-600 text-white py-3 rounded-lg mt-6 hover:bg-blue-700 transition-colors disabled:bg-blue-400"
+                      className="w-full bg-pink-600 text-white py-3 rounded-lg mt-6 hover:bg-pink-700 transition-colors disabled:bg-pink-400"
                     >
                       {isProcessing ? 'Processing...' : 'Complete Purchase'}
                     </button>
@@ -423,7 +423,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                 {currentStep === 'confirmation' && (
                   <div className="text-center">
                     <div className="w-16 h-16 mx-auto mb-4">
-                      <CheckCircle className="w-full h-full text-green-500" />
+                      <CheckCircle className="w-full h-full text-green-700 font-semibold" />
                     </div>
                     <h3 className="text-2xl font-bold mb-2">
                       Order Confirmed!
@@ -433,7 +433,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                     </p>
                     <button
                       onClick={onClose}
-                      className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                      className="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition-colors"
                     >
                       Continue Shopping
                     </button>

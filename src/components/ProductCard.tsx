@@ -37,7 +37,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => addItem(product)}
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center"
+            className="bg-pink-700 text-white px-4 py-2 rounded-lg flex items-center font-semibold"
           >
             <ShoppingCart className="w-4 h-4 mr-2" />
             Add to Cart

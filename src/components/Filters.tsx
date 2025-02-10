@@ -27,7 +27,7 @@ export const Filters: React.FC<FiltersProps> = ({
             onChange={(e) =>
               onFilterChange({ ...filters, search: e.target.value })
             }
-            className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
           />
         </div>
         <button
@@ -107,8 +107,8 @@ export const Filters: React.FC<FiltersProps> = ({
             >
               <option value="">All Categories</option>
               {categories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
+                <option className="selected:bg-pink-500 selection:text-white hover:bg-pink-500 hover:text-white text-black font-semibold" key={category} value={category}>
+                  {category}  
                 </option>
               ))}
             </select>
