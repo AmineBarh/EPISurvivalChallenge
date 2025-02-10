@@ -192,7 +192,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               firstName: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -209,7 +209,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               lastName: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
@@ -227,14 +227,14 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             email: e.target.value,
                           })
                         }
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700">
                         Address
                       </label>
-                      <input
+                      <input 
                         type="text"
                         required
                         value={shippingDetails.address}
@@ -244,7 +244,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             address: e.target.value,
                           })
                         }
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -262,7 +262,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               city: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -279,7 +279,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               state: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
@@ -298,7 +298,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               zipCode: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -315,7 +315,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                               country: e.target.value,
                             })
                           }
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
@@ -349,7 +349,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                           })
                         }
                         placeholder="1234 5678 9012 3456"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div>
@@ -367,7 +367,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                           })
                         }
                         placeholder="John Doe"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                       />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -387,7 +387,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             })
                           }
                           placeholder="MM/YY"
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                       <div>
@@ -406,7 +406,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ isOpen, onClose, total }) =>
                             })
                           }
                           placeholder="123"
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm outline-none focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
                     </div>
